@@ -1,0 +1,9 @@
+@use '../utilities/mixins' as *;
+@use '../utilities/variables' as *;
+@use 'sass:map';
+
+.encabezado {
+    @include flexear(null, space-evenly, center, null, null);
+    @include padmarg(10px, null, null, 10px);
+    background-color: map-get($colores, "color-contraste");
+}

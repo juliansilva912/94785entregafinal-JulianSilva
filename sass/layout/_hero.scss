@@ -1,0 +1,5 @@
+@use '../utilities/mixins' as *;
+
+.ajustar-img {
+    @include ajustar-imagen(0 auto, 100%, auto);
+}

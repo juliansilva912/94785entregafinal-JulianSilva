@@ -1,0 +1,61 @@
+@use '../utilities/mixins' as *;
+@use '../utilities/variables' as *;
+@use 'sass:map';
+
+.intro {
+    @include flexear(column, null, center, null, center);
+}
+
+.caja {
+    @include flexear(column, null, center, 20px, null);
+    @include padmarg(null, 10px, null, null);
+}
+
+.box {
+    @include flexear(column, null, null, null, null);
+    @include padmarg(20px, null, null, null);
+    @include borde(20px);
+    background-color: map-get($colores, "color-cards");
+}
+
+.box figcaption {
+    @include padmarg(null, null, null, 5px);
+}
+
+.cajita {
+    background-color: map-get($colores, "color-contraste");
+    @include padmarg(20px, null, null, null);
+}
+
+.carrusel {
+    @include padmarg(20px, 0 auto, null, null);
+    @include ajustar-imagen(null, 1280px, null);
+    @include borde(20px);
+    background-color: map-get($colores, "color-cards");
+}
+
+@media (min-width: 1024px) {
+
+    .caja {
+        @include padmarg(null, 0, null, null);
+    }
+
+    .box {
+        @include flexear(row, null, null, 50px, null);
+    }
+
+    .cajita {
+        width: $ancho;
+        @include borde(15px);
+    }
+
+    #boxinverso {
+        img {
+            order: $ord2;
+        }
+
+        figcaption {
+            order: $ord1;
+        }
+    }
+}

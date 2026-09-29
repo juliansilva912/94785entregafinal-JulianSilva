@@ -1,0 +1,16 @@
+@use '../utilities/variables' as *;
+@use 'sass:map';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: map-get($colores, "color-fondo");
+}
+
+h1, h2, h3, a, p, figcaption {
+    color: map-get($colores, "color-texto");
+}

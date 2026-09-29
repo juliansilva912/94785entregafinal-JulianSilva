@@ -1,0 +1,26 @@
+@mixin flexear($dir, $jus, $al, $g, $txtal) {
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $jus;
+    align-items: $al;
+    gap: $g;
+    text-align: $txtal;
+}
+
+@mixin padmarg($p, $m, $mt, $mb) {
+    padding: $p;
+    margin: $m;
+    margin-top: $mt;
+    margin-bottom: $mb;
+}
+
+@mixin ajustar-imagen($mar, $maxw, $h) {
+    display: block;
+    margin: $mar;
+    max-width: $maxw;
+    height: $h;
+}
+
+@mixin borde($br) {
+    border-radius: $br;
+}

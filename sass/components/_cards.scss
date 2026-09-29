@@ -1,0 +1,19 @@
+@use '../utilities/mixins' as *;
+@use '../utilities/variables' as *;
+@use 'sass:map';
+
+.cartas {
+    @include flexear(column, null, null, 20px, null);
+}
+
+.carta {
+    background-color: map-get($colores, "color-contraste");
+    @include padmarg(5px, null, null, null);
+}
+
+@media (min-width: 1024px) {
+
+    .cartas {
+        @include flexear(row, null, null, 60px, null);
+    }
+}

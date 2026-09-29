@@ -1,0 +1,13 @@
+@use '../utilities/mixins' as *;
+@use '../utilities/variables' as *;
+@use 'sass:map';
+
+.pie {
+    @include flexear(column, null, center, null, null);
+    @include padmarg(10px, null, 10px, null);
+    background-color: map-get($colores, "color-contraste");
+}
+
+.lista {
+    list-style: $estilo-lista;
+}
