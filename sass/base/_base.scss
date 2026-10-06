@@ -8,9 +8,9 @@
 }
 
 body {
-    background-color: map-get($colores, "color-fondo");
+    background-color: map.get($colores, "color-fondo");
 }
 
-h1, h2, h3, a, p, figcaption {
-    color: map-get($colores, "color-texto");
+h1, h2, h3, h4, a, p, figcaption {
+    color: map.get($colores, "color-texto");
 }

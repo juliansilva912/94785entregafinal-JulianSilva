@@ -2,7 +2,7 @@
 @use 'sass:map';
 
 .color-nav {
-    color: map-get($colores, "color-texto");
+    color: map.get($colores, "color-texto");
 }
 
 .navbar-toggler-icon {
@@ -12,6 +12,6 @@
 @media (min-width: 1024px) {
 
     .color-nav:hover {
-        color: map-get($colores, "color-detalles");
+        color: map.get($colores, "color-detalles");
     }
 }

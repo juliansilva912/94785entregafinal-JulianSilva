@@ -6,8 +6,12 @@
     @include flexear(column, null, center, null, center);
 }
 
-.caja {
+.flex {
     @include flexear(column, null, center, 20px, null);
+}
+
+.caja {
+    @extend .flex;
     @include padmarg(null, 10px, null, null);
 }
 
@@ -15,7 +19,7 @@
     @include flexear(column, null, null, null, null);
     @include padmarg(20px, null, null, null);
     @include borde(20px);
-    background-color: map-get($colores, "color-cards");
+    background-color: map.get($colores, "color-cards");
 }
 
 .box figcaption {
@@ -23,7 +27,7 @@
 }
 
 .cajita {
-    background-color: map-get($colores, "color-contraste");
+    background-color: map.get($colores, "color-contraste");
     @include padmarg(20px, null, null, null);
 }
 
@@ -31,8 +35,29 @@
     @include padmarg(20px, 0 auto, null, null);
     @include ajustar-imagen(null, 1280px, null);
     @include borde(20px);
-    background-color: map-get($colores, "color-cards");
+    background-color: map.get($colores, "color-cards");
 }
+
+.borde {
+    @include borde(20px);
+}
+
+.cont-jefes {
+    @extend .flex;
+    @include padmarg(null, 100px, null, null);
+}
+
+.comidas {
+    @include padmarg(20px, null, null, null);
+    @include borde(20px);
+    background-color: map.get($colores, "color-contraste");
+}
+
+.foto {
+    @include flexear(null, null, center, 20px, null);
+}
+
+
 
 @media (min-width: 1024px) {
 
@@ -46,7 +71,26 @@
 
     .cajita {
         width: $ancho;
-        @include borde(15px);
+        @include borde(20px);
+    }
+
+    #cajitaizq {
+        margin-right: $zigzag;
+    }
+
+    #cajitader {
+        margin-left: $zigzag;
+    }
+
+    .jefe {
+        @include flexear(null, null, null, 20px, null);
+    }
+
+    .comidas {        
+        @include flexear(null, null, null, 200px, null);
+        @include padmarg(20px, null, null, null);
+        @include borde(20px);
+        background-color: map.get($colores, "color-contraste");
     }
 
     #boxinverso {

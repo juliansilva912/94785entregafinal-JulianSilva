@@ -2,8 +2,14 @@
 @use '../utilities/variables' as *;
 @use 'sass:map';
 
+.cabeza {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
 .encabezado {
     @include flexear(null, space-evenly, center, null, null);
     @include padmarg(10px, null, null, 10px);
-    background-color: map-get($colores, "color-contraste");
+    background-color: map.get($colores, "color-contraste");
 }

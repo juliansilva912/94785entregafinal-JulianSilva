@@ -7,7 +7,7 @@
 }
 
 .carta {
-    background-color: map-get($colores, "color-contraste");
+    background-color: map.get($colores, "color-contraste");
     @include padmarg(5px, null, null, null);
 }
 

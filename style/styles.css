@@ -1,3 +1,9 @@
+.cabeza {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
 .encabezado {
   display: flex;
   justify-content: space-evenly;
@@ -34,11 +40,14 @@
   text-align: center;
 }
 
-.caja {
+.flex, .cont-jefes, .caja {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
+}
+
+.caja {
   margin: 10px;
 }
 
@@ -68,6 +77,26 @@
   background-color: #2C4A52;
 }
 
+.borde {
+  border-radius: 20px;
+}
+
+.cont-jefes {
+  margin: 100px;
+}
+
+.comidas {
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #0D1F22;
+}
+
+.foto {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
 @media (min-width: 1024px) {
   .caja {
     margin: 0;
@@ -79,7 +108,24 @@
   }
   .cajita {
     width: 800px;
-    border-radius: 15px;
+    border-radius: 20px;
+  }
+  #cajitaizq {
+    margin-right: 500px;
+  }
+  #cajitader {
+    margin-left: 500px;
+  }
+  .jefe {
+    display: flex;
+    gap: 20px;
+  }
+  .comidas {
+    display: flex;
+    gap: 200px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #0D1F22;
   }
   #boxinverso img {
     order: 2;
@@ -116,8 +162,12 @@ body {
   background-color: #1A3438;
 }
 
-h1, h2, h3, a, p, figcaption {
+h1, h2, h3, h4, a, p, figcaption {
   color: #D9C9A8;
+}
+
+body {
+  font-family: "Averia Serif Libre", serif;
 }
 
 .pie {
