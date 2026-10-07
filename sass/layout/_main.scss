@@ -22,6 +22,13 @@
     background-color: map.get($colores, "color-cards");
 }
 
+.bloque {
+    @extend .flex;
+    @extend .borde;
+    @include padmarg(20px, null, null, null);
+    background-color: map.get($colores, "color-cards");
+}
+
 .box figcaption {
     @include padmarg(null, null, null, 5px);
 }
@@ -42,7 +49,7 @@
     @include borde(20px);
 }
 
-.cont-jefes {
+.cont {
     @extend .flex;
     @include padmarg(null, 100px, null, null);
 }
@@ -82,7 +89,7 @@
         margin-left: $zigzag;
     }
 
-    .jefe {
+    .fila {
         @include flexear(null, null, null, 20px, null);
     }
 
