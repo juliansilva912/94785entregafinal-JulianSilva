@@ -33,6 +33,12 @@
   height: auto;
 }
 
+.principal {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
 .intro {
   display: flex;
   flex-direction: column;
@@ -51,11 +57,14 @@
   margin: 10px;
 }
 
-.box {
+.elem, .box {
   display: flex;
   flex-direction: column;
   padding: 20px;
   border-radius: 20px;
+}
+
+.box {
   background-color: #2C4A52;
 }
 
@@ -106,7 +115,7 @@
   .caja {
     margin: 0;
   }
-  .box {
+  .elem, .box {
     display: flex;
     flex-direction: row;
     gap: 50px;
@@ -123,6 +132,7 @@
   }
   .fila {
     display: flex;
+    align-items: center;
     gap: 20px;
   }
   .comidas {

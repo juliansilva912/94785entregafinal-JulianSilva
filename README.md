@@ -7,10 +7,10 @@ Sitio web multi-página hecho con HTML, SCSS y Bootstrap. Es un proyecto de desa
 | | Página | Contenido |
 |:---:|---|---|
 | 🏠 | `index.html` | Inicio con tarjetas de personajes y acceso a los jefes |
-| 👥 | `pages/sobre-nosotros.html` | Presentación del grupo con cards |
-| 🗺️ | `pages/nuestro-mundo.html` | Carrusel de bases y texto en zigzag |
-| 💀 | `pages/desterrados.html` | Jefes derrotados con builds de comidas |
 | 🏞️ | `pages/biomas.html` | Zonas de Valheim, con sus enemigos, recursos y jefe |
+| ⚔️ | `pages/bestiario.html` | Cards de enemigos ordenados por bioma |
+| 💀 | `pages/desterrados.html` | Jefes derrotados con builds de comidas |
+| 👥 | `pages/sobre-nosotros.html` | Presentación del grupo con cards |
 
 ## 🛠️ Tecnologías
 
