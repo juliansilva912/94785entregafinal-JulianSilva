@@ -3,17 +3,22 @@
 @use 'sass:map';
 
 .cartas {
-    @include flexear(column, null, null, 20px, null);
+    @include flexear(column, null, null, 20px, null, null);
 }
 
 .carta {
     background-color: map.get($colores, "color-contraste");
-    @include padmarg(5px, null, null, null);
+    @include padmarg(5px, null, null, null, null, null, null);
+    transition: all 0.5s;
+}
+
+.carta:hover {
+    transform: scale(1.1);
 }
 
 @media (min-width: 1024px) {
 
     .cartas {
-        @include flexear(row, null, null, 60px, null);
+        @include flexear(row, null, null, 60px, null, null);
     }
 }

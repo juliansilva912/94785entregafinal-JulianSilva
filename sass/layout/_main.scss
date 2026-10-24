@@ -3,51 +3,53 @@
 @use 'sass:map';
 
 .principal {
-    @include flexear(column, null, null, 50px, null);
+    @include flexear(column, null, null, 50px, null, null);
 }
 
 .intro {
-    @include flexear(column, null, center, null, center);
+    @include flexear(column, null, center, null, center, null);
 }
 
 .flex {
-    @include flexear(column, null, center, 20px, null);
+    @include flexear(column, null, center, 20px, null, null);
 }
 
 .caja {
     @extend .flex;
-    @include padmarg(null, 10px, null, null);
+    @include padmarg(null, 10px, null, null, null, null, null);
 }
 
 .elem {
-    @include flexear(column, null, null, null, null);
-    @include padmarg(20px, null, null, null);
+    @include flexear(column, null, null, null, null, null);
+    @include padmarg(20px, null, null, null, null, null, null);
     @include borde(20px);
 }
 
 .box {
-    @extend .elem;
+    @include flexear(column, null, null, null, null, null);
+    @include padmarg(20px, null, null, null, null, null, null);
+    @include borde(20px);
     background-color: map.get($colores, "color-cards");
 }
 
 .bloque {
     @extend .flex;
     @extend .borde;
-    @include padmarg(20px, null, null, null);
+    @include padmarg(20px, null, null, null, null, null, null);
     background-color: map.get($colores, "color-cards");
 }
 
 .box figcaption {
-    @include padmarg(null, null, null, 5px);
+    @include padmarg(null, null, null, 5px, null, null, null);
 }
 
 .cajita {
     background-color: map.get($colores, "color-contraste");
-    @include padmarg(20px, null, null, null);
+    @include padmarg(20px, null, null, null, null, null, null);
 }
 
 .carrusel {
-    @include padmarg(20px, 0 auto, null, null);
+    @include padmarg(20px, 0 auto, null, null, null, null, null);
     @include ajustar-imagen(null, 1280px, null);
     @include borde(20px);
     background-color: map.get($colores, "color-cards");
@@ -59,17 +61,22 @@
 
 .cont {
     @extend .flex;
-    @include padmarg(null, 100px, null, null);
+    @include padmarg(null, 20px, null, null, null, null, null);
 }
 
 .comidas {
-    @include padmarg(20px, null, null, null);
+    @include padmarg(20px, null, null, null, null, null, null);
     @include borde(20px);
     background-color: map.get($colores, "color-contraste");
 }
 
 .foto {
-    @include flexear(null, null, center, 20px, null);
+    @include flexear(null, null, center, 20px, null, null);
+}
+
+.nota {
+    @include padmarg(20px, auto, null, null, null, null, 1000px);
+    background-color: map.get($colores, "color-cards");
 }
 
 
@@ -77,15 +84,38 @@
 @media (min-width: 1024px) {
 
     .caja {
-        @include padmarg(null, 0, null, null);
+        @include padmarg(null, 0, null, null, null, null, null);
+    }
+
+    #jefes {
+        transition: all 0.5s;
+    }
+
+    #jefes:hover {
+        transform: scale(1.1);
     }
 
     .elem {
-        @include flexear(row, null, null, 50px, null);
+        @include flexear(row, center, null, 50px, null, wrap);
+        @include padmarg(null, null, null, null, auto, auto, 1100px);
+    }
+
+    .bloque {
+        transition: all 0.5s;
+    }
+
+    .bloque:hover {
+        transform: scale(1.1);
     }
 
     .box {
-        @extend .elem;
+        @include flexear(row, center, null, 50px, null, wrap);
+        transition: all 0.5s;
+    }
+
+    .box:hover {
+        transform: scale(1.1);
+        background-color: map.get($colores, "color-fondo");
     }
 
     .cajita {
@@ -102,12 +132,12 @@
     }
 
     .fila {
-        @include flexear(null, null, center, 20px, null);
+        @include flexear(null, null, center, 20px, null, null);
     }
 
     .comidas {        
-        @include flexear(null, null, null, 200px, null);
-        @include padmarg(20px, null, null, null);
+        @include flexear(null, null, null, 200px, null, null);
+        @include padmarg(20px, null, null, null, null, null, null);
         @include borde(20px);
         background-color: map.get($colores, "color-contraste");
     }

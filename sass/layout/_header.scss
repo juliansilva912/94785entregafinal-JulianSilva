@@ -9,7 +9,7 @@
 }
 
 .encabezado {
-    @include flexear(null, space-evenly, center, null, null);
-    @include padmarg(10px, null, null, 10px);
+    @include flexear(null, space-evenly, center, null, null, null);
+    @include padmarg(10px, null, null, 10px, null, null, null);
     background-color: map.get($colores, "color-contraste");
 }

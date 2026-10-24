@@ -1,17 +1,21 @@
-@mixin flexear($dir, $jus, $al, $g, $txtal) {
+@mixin flexear($dir, $jus, $al, $g, $txtal, $wrap) {
     display: flex;
     flex-direction: $dir;
     justify-content: $jus;
     align-items: $al;
     gap: $g;
     text-align: $txtal;
+    flex-wrap: $wrap;
 }
 
-@mixin padmarg($p, $m, $mt, $mb) {
+@mixin padmarg($p, $m, $mt, $mb, $ml, $mr, $mx) {
     padding: $p;
     margin: $m;
     margin-top: $mt;
     margin-bottom: $mb;
+    margin-left: $ml;
+    margin-right: $mr;
+    max-width: $mx;
 }
 
 @mixin ajustar-imagen($mar, $maxw, $h) {

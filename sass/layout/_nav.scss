@@ -14,4 +14,8 @@
     .color-nav:hover {
         color: map.get($colores, "color-detalles");
     }
+
+    .color-nav:focus {
+        color: map.get($colores, "color-detalles");
+    }
 }

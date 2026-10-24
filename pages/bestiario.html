@@ -3,10 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Enemigos en Valheim, ordeandos por bioma y dificultad.">
+    <meta name="keywords" content="valheim, bestiario, enemigos, mobs, npc">
+    <meta name="robots" content="index, follow">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="../style/styles.css">
     <title>Bestiario</title>
 </head>
@@ -14,7 +19,7 @@
 
     <header class="cabeza">
         <div class="encabezado">
-            <h1><img src="../image/valhleales-al-rock.png" alt="titulo de la pagina valhleales"></h1>
+            <h1><img src="../image/valhleales-al-rock.png" class="animate__animated animate__tada" alt="titulo de la pagina valhleales"></h1>
 
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
@@ -37,7 +42,68 @@
     </header>
 
     <main>
+        <section>
+            <div class="intro">
+                <h2>Bestiario</h2>
 
+                <p>En esta sección conoceremos los distintos enemigos ordenados por bioma.</p>
+            </div>
+
+            <div class="cont">
+                <h3>Pradera</h3>
+                <div class="elem" id="pradera"></div>
+            </div>
+
+            <div class="cont">
+                <h3>Bosque Negro</h3>
+                <div class="elem" id="bosque-negro"></div>
+            </div>
+
+            <div class="cont">
+                <h3>Oceano</h3>
+                <div class="elem" id="oceano"></div>
+            </div>
+
+            <div class="cont">
+                <h3>Pantano</h3>
+                <div class="elem" id="pantano"></div>
+            </div>
+
+            <div class="cont">
+                <h3>Montaña</h3>
+                <div class="elem" id="montaña"></div>
+            </div>
+
+            <div class="cont">
+                <h3>Llanura</h3>
+                <div class="elem" id="llanura"></div>
+            </div>
+
+            <div class="cont">
+                <h3>Tierras Nubladas</h3>
+                <div class="elem" id="tierras-nubladas"></div>
+            </div>
+
+            <div class="cont">
+                <h4>Tierras de Ceniza</h4>
+                <div class="elem" id="tierras-de-ceniza"></div>
+            </div>
+        </section>
+
+        <div class="cont">
+            <h4>Norte Profundo, proximamente...</h4>
+            <div class="elem" id="norte-profundo"></div>
+        </div>
+
+        <section>
+            <div class="nota">
+                <h4>Notas</h4>
+                <ul>
+                    <li><p>La dificultad de los enemigos la elegimos en base a nuestra experiencia, ya que a simple vista algunos enemigos con valores altos parecen mas peligrosos de lo que nos parecieron en nuestra partida.</p></li>
+                    <li><p>Algunos enemigos tienen mas de un ataque con distintos valores de daño, optamos por solo mostrar sus ataques con mas daño para facilitar la lectura del mismo. Lo mismo para Debilidad, Resistencia e Inmunidad, solo optamos por mostrar la que nos parecia mas significativa para el tipo de enemigo, lo que representa y el bioma en el cual se encuentra.</p></li>
+                </ul>
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -48,10 +114,7 @@
                 <h3>Redes sociales</h3>
                 <ul class="lista">
                     <li>
-                        <a href="https://www.instagram.com" target="_blank">Instagram</a>
-                    </li>
-                    <li>
-                        <a href="https://www.tiktok.com" target="_blank">TikTok</a>
+                        <a href="https://www.instagram.com/eltorovikingo" target="_blank">Instagram</a>
                     </li>
                     <li>
                         <a href="https://kick.com/eltorovikingo" target="_blank">Kick</a>
@@ -64,6 +127,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="../js/script.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     
