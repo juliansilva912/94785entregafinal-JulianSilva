@@ -20,8 +20,9 @@
 }
 
 .elem {
-    @include flexear(column, null, null, null, null, null);
+    @include flexear(column, null, null, 20px, null, null);
     @include padmarg(20px, null, null, null, null, null, null);
+    min-width: $width-cel;
     @include borde(20px);
 }
 
